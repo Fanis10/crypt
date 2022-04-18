@@ -44,9 +44,7 @@ $(document).ready(function() {
 
     // Animate
     AOS.init({
-        disable: mobile,
-        phone,
-        tablet,
+        disable: false,
         startEvent: 'DOMContentLoaded',
         initClassName: 'aos-init',
         animatedClassName: 'aos-animate',
