@@ -225,9 +225,9 @@ li {
 }
 
 .marketing {
-  background: url(../img/IMG_4516.png), url(../img/vector1.png);
-  background-position: center, bottom 0 left 0;
-  background-size: cover;
+  background: url(../img/IMG_4516.png);
+  background-position: center top;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   height: 1117px;
   position: relative;
@@ -425,7 +425,7 @@ li {
 
 .promotion {
   padding-top: 140px;
-  padding-bottom: 385px;
+  padding-bottom: 300px;
 }
 .promotion__desc {
   max-width: 1105px;
