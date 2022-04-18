@@ -1,32 +1,50 @@
 .crypt__title {
   font-size: 84px;
   line-height: 84px;
-  font-weight: 400; }
+  font-weight: 400;
+}
+
+[data-aos="title-two-animate"] {
+  transform: translateY(70px);
+  opacity: 0;
+}
+[data-aos="title-two-animate"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 .crypt__text {
   font-size: 32px;
   line-height: 32px;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 @media screen and (max-width: 1200px) {
   .crypt__title {
     font-size: 45px;
-    line-height: 45px; } }
+    line-height: 45px;
+  }
+}
 @media screen and (max-width: 992px) {
   .crypt__text {
     font-size: 18px;
-    line-height: 18px; } }
+    line-height: 18px;
+  }
+}
 @media screen and (max-width: 768px) {
   .crypt__title {
     font-size: 31px;
-    line-height: 31px; } }
+    line-height: 31px;
+  }
+}
 @media screen and (max-width: 500px) {
   .crypt__title {
     font-size: 21px;
-    line-height: 31px; }
+    line-height: 31px;
+  }
 
   .crypt__text {
     font-size: 10px;
-    line-height: 14px; } }
-
-/*# sourceMappingURL=ux.css.map */
+    line-height: 14px;
+  }
+}

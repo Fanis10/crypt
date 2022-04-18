@@ -39,3 +39,28 @@ r(function() {
         }
     }
 });
+
+$(document).ready(function() {
+
+    // Animate
+    AOS.init({
+        disable: false,
+        startEvent: 'DOMContentLoaded',
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+
+        // Settings 
+        offset: 100,
+        delay: 0,
+        duration: 500,
+        easing: 'ease',
+        once: 1,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+    });
+
+})

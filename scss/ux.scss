@@ -4,6 +4,15 @@
     font-weight: 400;
 }
 
+[data-aos="title-two-animate"] {
+    transform: translateY(70px);
+    opacity: 0;
+    &.aos-animate {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .crypt__text {
     font-size: 32px;
     line-height: 32px;

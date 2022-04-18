@@ -96,6 +96,14 @@
         position: relative;
         z-index: 2;
     }
+    [data-aos="desc-animate"] {
+        transform: translateY(50px);
+        opacity: 0;
+        &.aos-animate {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
     &__texts {
         margin-top: 25px;
     }
@@ -227,6 +235,12 @@
             color: #ffffff;
         }
     }
+    [data-aos="btn-animate"] {
+        transform: scale(1) rotateZ(0);
+        &.aos-animate {
+            transform: scale(1) rotateZ(360deg);
+        }
+    }
 }
 
 .promotion {
@@ -274,6 +288,14 @@
         &:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+    }
+    [data-aos="translate-animate"] {
+        transform: translateY(-80px);
+        opacity: 0;
+    }
+    [data-aos="translate-animate"].aos-animate {
+        transform: translateY(0px);
+        opacity: 1;
     }
     &__text {
         font-size: 21px;
@@ -326,6 +348,14 @@
             background-color: #000000;
         }
     }
+    [data-aos="title-animate"] {
+        transform: translateY(-70px);
+        opacity: 0;
+        &.aos-animate {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
     &__text {
         line-height: 52px;
         font-weight: 300;
@@ -344,6 +374,14 @@
             width: 2px;
             height: 55px;
             background-color: #000000;
+        }
+    }
+    [data-aos="text-animate"] {
+        transform: translateY(70px);
+        opacity: 0;
+        &.aos-animate {
+            transform: translateY(0);
+            opacity: 1;
         }
     }
 }
@@ -413,6 +451,22 @@
         display: flex;
         align-items: center;
         position: relative;
+    }
+    [data-aos="left-animate"] {
+        transform: translateX(-100px);
+        opacity: 0;
+        &.aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    [data-aos="right-animate"] {
+        transform: translateX(100px);
+        opacity: 0;
+        &.aos-animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
     &__img {
         position: relative;
