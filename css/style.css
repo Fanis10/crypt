@@ -205,7 +205,7 @@ li {
 }
 .header__btn-ru, .header__btn-eng {
   font-family: 'Bebas Neue';
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 400;
   text-transform: uppercase;
   border: none;
@@ -217,7 +217,7 @@ li {
   color: #535050;
 }
 .header__btn-line {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 300;
   color: #000000;
   margin-right: 0px;
@@ -225,10 +225,7 @@ li {
 }
 
 .marketing {
-  background: url(../img/IMG_4516.png);
-  background-position: center top;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
+  background-color: #000000;
   height: 1117px;
   position: relative;
 }
@@ -236,20 +233,12 @@ li {
   content: '';
   position: absolute;
   background-image: url(../img/vector1.png), url(../img/vector2.png), url(../img/vector3.png), url(../img/vector4.png), url(../img/vector5.png), url(../img/vector6.png);
-  background-position: left -50px bottom 290px, left -50px bottom 245px, left -50px bottom 220px, left -50px bottom 175px, left -50px bottom 93px, left -50px bottom 19px;
+  background-position: left -50px bottom 275px, left -50px bottom 241px, left -50px bottom 215px, left -50px bottom 173px, left -50px bottom 89px, left -50px bottom 19px;
   background-repeat: no-repeat;
+  background-size: 327px 65px, 302px 20px, 343px 20px, 444px 45px, 516px 87px, 506px 60px;
   z-index: 2;
   width: 100%;
   height: 100%;
-}
-.marketing::after {
-  content: '';
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.55);
 }
 .marketing__mob::before {
   content: '';
@@ -261,6 +250,24 @@ li {
   width: 100%;
   height: 100%;
   display: none;
+}
+.marketing__bg-img img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+}
+.marketing__bg-img::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.55);
 }
 .marketing__desc {
   padding-top: 300px;
@@ -375,7 +382,7 @@ li {
   font-size: 17.8px;
   line-height: 17px;
   font-weight: 300;
-  text-align: center;
+  text-align: start;
 }
 .video__text-mob:not(:last-child) {
   margin-bottom: 8px;
@@ -411,6 +418,7 @@ li {
   flex-shrink: 0;
   transition: all 0.3s;
   cursor: pointer;
+  margin-left: 15px;
 }
 .connection__btn:hover {
   background-color: #000000;
@@ -513,7 +521,7 @@ li {
 }
 .info__inner {
   padding-top: 420px;
-  padding-bottom: 600px;
+  padding-bottom: 420px;
 }
 .info__title {
   text-align: center;
@@ -540,7 +548,6 @@ li {
 .info__text {
   line-height: 52px;
   font-weight: 300;
-  text-align: center;
   padding-top: 40px;
   position: relative;
   padding-bottom: 120px;
@@ -594,17 +601,18 @@ li {
   right: 0;
   transform: translate(0%, 0);
   z-index: 10;
-  width: 80%;
+  width: 60%;
 }
 .market__desc {
   background-color: #ffffff;
   margin-left: auto;
-  padding: 0 100px 85px;
+  padding: 0 0 85px 100px;
 }
 .market__text {
+  font-weight: 300;
   line-height: 53px;
   text-transform: uppercase;
-  max-width: 670px;
+  max-width: 800px;
   margin-right: auto;
 }
 
@@ -617,7 +625,7 @@ li {
 .benefits::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 80px;
   left: 50%;
   width: 100%;
   height: 100%;
@@ -626,7 +634,7 @@ li {
   background-image: url(../img/benefits_bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: auto auto;
 }
 .benefits__inner {
   display: flex;
@@ -686,7 +694,6 @@ li {
 
 .map {
   position: relative;
-  height: 1020px;
   overflow: hidden;
 }
 .map::after {
@@ -699,15 +706,17 @@ li {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .map__inner {
-  padding-top: 142px;
-  position: relative;
-}
-.map__img {
+  padding-top: 200px;
+  padding-bottom: 320px;
   position: relative;
 }
 .map__img img {
-  width: 100%;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 100%;
+  height: auto;
   -webkit-filter: invert(80%);
 }
 .map__title-border {
@@ -793,6 +802,11 @@ li {
 }
 
 @media screen and (max-width: 2095px) {
+  .benefits::before {
+    background-size: 100% auto;
+    top: 30px;
+  }
+
   .footer .container {
     width: 100%;
   }
@@ -800,6 +814,10 @@ li {
 @media screen and (max-width: 1650px) {
   .header .container {
     width: 100%;
+  }
+
+  .benefits::before {
+    top: 0;
   }
 }
 @media screen and (max-width: 1530px) {
@@ -816,6 +834,10 @@ li {
     background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market_vector.png), url(../img/market_vector2_mob.png);
     background-position: top 300px left 117px, top 45px left 0, top 182px left 0, right 0 bottom 195px, right 0 bottom 165px;
     background-size: 215px 448px, 413px 105px, 105px 37px, 359px 109px, 57px 39px;
+  }
+  .info__inner {
+    padding-top: 280px;
+    padding-bottom: 280px;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -857,7 +879,8 @@ li {
     line-height: 45px;
   }
   .connection__btn {
-    width: 400px;
+    width: 300px;
+    height: 65px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -884,10 +907,10 @@ li {
   }
 
   .connection__inner {
-    padding: 100px 0px;
+    padding: 100px 130px;
   }
   .connection .work__inner {
-    padding: 100px 0px;
+    padding: 100px 45px;
   }
 
   .promotion {
@@ -920,11 +943,6 @@ li {
     line-height: 25px;
   }
 
-  .map {
-    height: 100%;
-    padding-top: 80px;
-    padding-bottom: 160px;
-  }
   .map__title-border {
     max-width: 100%;
   }
@@ -933,7 +951,8 @@ li {
     padding: 0;
   }
   .map__inner {
-    padding-top: 0;
+    padding-top: 130px;
+    padding-bottom: 180px;
   }
   .map__social-network {
     margin-top: 95px;
@@ -976,6 +995,7 @@ li {
     display: block;
     background-image: url(../img/vector_mob1.png), url(../img/vector_mob2.png), url(../img/vector_mob3.png), url(../img/vector_mob4.png), url(../img/vector_mob5.png), url(../img/vector_mob6.png), url(../img/vector_mob7.png), url(../img/vector_mob8.png), url(../img/vector_mob9.png);
     background-position: bottom 179px left -30px, bottom 155px left -30px, bottom 142px left -30px, bottom 110px left -30px, bottom 109px left -30px, bottom 87px left -30px, bottom 66px left -30px, bottom 35px left -30px, bottom 15px left -30px;
+    background-size: unset;
   }
   .marketing__texts {
     display: none;
@@ -1010,7 +1030,10 @@ li {
   }
 
   .connection__inner {
-    padding: 100px 80px;
+    padding: 100px 150px;
+  }
+  .connection .work__inner {
+    padding: 100px 145px;
   }
   .connection__title {
     font-size: 24px;
@@ -1028,9 +1051,6 @@ li {
     max-width: 196px;
     height: 34px;
     font-size: 16px;
-  }
-  .connection .work__btn {
-    margin-left: 0;
   }
 
   .promotion {
@@ -1154,6 +1174,10 @@ li {
     font-size: 18px;
     line-height: 18px;
   }
+
+  .map__inner {
+    padding-bottom: 170px;
+  }
 }
 @media screen and (max-width: 870px) {
   .marketing::before {
@@ -1161,6 +1185,14 @@ li {
   }
   .marketing__mob::before {
     display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  .connection__inner {
+    padding: 100px 130px;
+  }
+  .connection .work__inner {
+    padding: 100px 130px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1189,17 +1221,19 @@ li {
   }
   .video__inner::after {
     display: block;
-    background-image: url(../img/video1.png), url(../img/video2.png), url(../img/video3.png), url(../img/video4.png), url(../img/video5.png), url(../img/video6.png), url(../img/video7.png), url(../img/video8.png), url(../img/video9.png);
-    background-position: bottom 14px left 43%, bottom 4px left 45%, bottom 10px left 48%, bottom 23px left 49.5%, bottom 24px left 51.5%, left 52.5% bottom 15px, left 57% bottom 2px, left 57% bottom 17px, left 60% bottom 18px;
-    background-size: 10px 69px, 7px 80px, 8px 59px, 2px 50px, 3px 48px, 8px 60px, 15px 70px, 7px 48px, 10px 55px;
-    height: calc(100% + 45px);
+    background-image: url(../img/video_mob1.png), url(../img/video_mob2.png), url(../img/video_mob3.png), url(../img/video_mob4.png), url(../img/video_mob5.png), url(../img/video_mob6.png), url(../img/video_mob7.png), url(../img/video_mob8.png), url(../img/video_mob9.png), url(../img/video_mob10.png), url(../img/video_mob11.png), url(../img/video_mob12.png);
+    background-position: bottom 14px left 38%, bottom 17px left 41%, bottom 5px left 41%, bottom 0px left 43.5%, bottom 10px left 47.5%, left 49.5% bottom 23px, left 52.5% bottom 28px, left 53.5% bottom 16px, left 60.5% bottom 0px, left 60% bottom 19px, left 63% bottom 20px, left 64% bottom 30px;
+    height: calc(100% + 50px);
   }
   .video__desc-mob {
     margin-top: 55px;
   }
 
   .connection__inner {
-    padding: 100px 50px;
+    padding: 100px 120px;
+  }
+  .connection .work__inner {
+    padding: 100px 115px;
   }
   .connection__title {
     font-size: 18px;
@@ -1210,6 +1244,9 @@ li {
     height: 25px;
   }
 
+  .promotion {
+    padding-bottom: 10px;
+  }
   .promotion__desc {
     max-width: 500px;
   }
@@ -1222,6 +1259,9 @@ li {
     display: none;
   }
 
+  .map__inner {
+    padding-bottom: 130px;
+  }
   .map__social:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1242,12 +1282,12 @@ li {
   }
   .info::before {
     background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market__vector2__mob2.png), url(../img/market_vector.png);
-    background-position: top 5px right 9px, top 35px left 0, top 59px left 0, right 0 bottom 90px, right 0 bottom 110px;
+    background-position: top 5px right 9px, top 35px left 0, top 59px left 0, right 0 bottom 37px, right 0 bottom 40px;
     background-size: 60px 126px, 120px 29px, 50px 12px, 48px 11px, 132px 30px;
   }
   .info__inner {
     padding-top: 90px;
-    padding-bottom: 130px;
+    padding-bottom: 50px;
     padding-right: 0;
   }
   .info__desc {
@@ -1259,9 +1299,6 @@ li {
   }
   .info__title::before {
     left: 50%;
-  }
-  .info__text {
-    text-align: center;
   }
   .info__text::before {
     left: 50%;
@@ -1291,6 +1328,14 @@ li {
     font-size: 21px;
   }
 }
+@media screen and (max-width: 650px) {
+  .connection__inner {
+    padding: 100px 58px;
+  }
+  .connection .work__inner {
+    padding: 100px 50px;
+  }
+}
 @media screen and (max-width: 500px) {
   .header__inner {
     padding: 5px 0;
@@ -1316,17 +1361,24 @@ li {
   .marketing__mob::before {
     display: none;
   }
+  .marketing__bg-img img {
+    transform: translate(-30%, 0);
+  }
   .marketing__desc {
     display: block;
     padding-top: 300px;
     padding-bottom: 0px;
     width: 100%;
+    float: unset;
+    max-width: 100%;
   }
   .marketing__title {
     font-size: 32px;
     line-height: 32px;
     max-width: 100%;
-    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 265px;
   }
   .marketing__texts {
     display: none;
@@ -1353,10 +1405,10 @@ li {
   }
 
   .connection__inner {
-    padding: 35px 20px;
+    padding: 35px 60px;
   }
   .connection .work__inner {
-    padding: 35px 20px;
+    padding: 35px 60px;
   }
   .connection__title {
     font-size: 12px;
@@ -1374,6 +1426,7 @@ li {
     max-width: 94px;
     height: 17px;
     font-size: 8px;
+    margin-left: 0;
   }
 
   .promotion__desc {
@@ -1475,9 +1528,9 @@ li {
     line-height: 12px;
   }
 
-  .map {
-    padding-top: 30px;
-    padding-bottom: 45px;
+  .map__inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .map__desc {
     padding-left: 0;
@@ -1504,5 +1557,13 @@ li {
   }
   .footer__year {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .connection__inner {
+    padding: 35px 35px;
+  }
+  .connection .work__inner {
+    padding: 35px 35px;
   }
 }
