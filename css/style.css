@@ -1199,7 +1199,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .marketing {
-    height: 490px;
+    max-height: 490px;
   }
   .marketing .header__img {
     max-width: 100px;
@@ -1355,9 +1355,6 @@ li {
   }
 }
 @media screen and (max-width: 500px) {
-  .marketing__bg {
-    transform: translate(-30%, 0);
-  }
   .marketing__desc {
     display: block;
     padding-top: 230px;

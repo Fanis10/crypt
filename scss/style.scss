@@ -1067,7 +1067,7 @@
 
 @media screen and (max-width: 768px) {
     .marketing {
-        height: 490px;
+        max-height: 490px;
         .header {
             &__img {
                 max-width: 100px;
@@ -1232,9 +1232,6 @@
 
 @media screen and (max-width: 500px) {
     .marketing {
-        &__bg {
-            transform: translate(-30%, 0);
-        }
         &__desc {
             display: block;
             padding-top: 230px;
