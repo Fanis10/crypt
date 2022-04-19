@@ -1,6 +1,9 @@
 @import'codes';
 @import'ux';
 .marketing {
+    .container {
+        padding: 0;
+    }
     height: 1117px;
     position: relative;
     &__bg {

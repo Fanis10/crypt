@@ -133,6 +133,7 @@ li {
 
 .container {
   width: 1500px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -189,6 +190,9 @@ li {
 .marketing {
   height: 1117px;
   position: relative;
+}
+.marketing .container {
+  padding: 0;
 }
 .marketing__bg {
   position: absolute;
