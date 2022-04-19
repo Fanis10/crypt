@@ -132,8 +132,7 @@ li {
 }
 
 .container {
-  width: 1530px;
-  padding: 0 15px;
+  width: 1500px;
   margin: 0 auto;
 }
 
@@ -1337,7 +1336,7 @@ li {
     bottom: -25px;
   }
   .market__desc {
-    padding: 0 10px 25px;
+    padding: 0 0 25px 15px;
   }
   .market__text {
     font-size: 10px;
@@ -1468,7 +1467,7 @@ li {
     width: 90%;
   }
   .market__desc {
-    padding: 0 0 10px 0;
+    padding: 0 0 10px 15px;
   }
   .market__text {
     font-size: 12px;
