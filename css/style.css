@@ -1355,6 +1355,9 @@ li {
   }
 }
 @media screen and (max-width: 500px) {
+  .marketing__bg {
+    transform: translate(-30%, 0);
+  }
   .marketing__desc {
     display: block;
     padding-top: 230px;
