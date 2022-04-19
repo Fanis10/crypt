@@ -1199,7 +1199,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .marketing {
-    max-height: 490px;
+    height: 490px;
   }
   .marketing .header__img {
     max-width: 100px;
