@@ -1386,7 +1386,7 @@ li {
 
   .video {
     margin-top: -35px;
-    padding-bottom: 130px;
+    padding-bottom: 155px;
   }
   .video__inner {
     max-width: 350px;
@@ -1396,8 +1396,8 @@ li {
     max-width: 100%;
   }
   .video__text-mob {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .video__text-mob:not(:last-child) {
     margin-bottom: 5px;
@@ -1457,21 +1457,21 @@ li {
   .market {
     box-shadow: 0px 10px 72px 10px rgba(0, 0, 0, 0.46);
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 90px;
   }
   .market__title {
     max-width: 255px;
   }
   .market__width {
     bottom: -10px;
-    width: 75%;
+    width: 90%;
   }
   .market__desc {
     padding: 0 0 10px 0;
   }
   .market__text {
-    font-size: 9px;
-    line-height: 12px;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .benefits {
@@ -1501,15 +1501,15 @@ li {
     margin-top: 50px;
   }
   .benefits__desc {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .benefits__title {
     max-width: 180px;
     line-height: 21px;
   }
   .benefits__text {
-    padding-top: 5px;
-    font-size: 10px;
+    padding-top: 7px;
+    font-size: 12px;
     line-height: 12px;
   }
 
@@ -1542,6 +1542,15 @@ li {
 }
 @media screen and (max-width: 400px) {
   .market__width {
-    width: 80%;
+    width: 93%;
+  }
+}
+@media screen and (max-width: 370px) {
+  .market__width {
+    width: 88%;
+  }
+  .market__text {
+    font-size: 10px;
+    line-height: 14px;
   }
 }
