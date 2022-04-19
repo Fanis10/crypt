@@ -21,7 +21,7 @@
         &-ru,
         &-eng {
             font-family: 'Bebas Neue';
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 400;
             text-transform: uppercase;
             border: none;
@@ -33,7 +33,7 @@
             }
         }
         &-line {
-            font-size: 26px;
+            font-size: 24px;
             font-weight: 300;
             color: #000000;
             margin-right: 0px;
@@ -294,6 +294,7 @@
         padding: 90px 93px 30px;
         background-color: rgba(0, 0, 0, 0.5);
         transition: all 0.3s;
+        text-align: center;
         cursor: pointer;
         &:hover {
             background-color: rgba(0, 0, 0, 0.8);
@@ -598,32 +599,52 @@
     background-color: rgba(0, 0, 0, 0.8);
     position: relative;
     z-index: 5;
-    .container {
-        width: 2095px;
-    }
     &__inner {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 50px 0;
+        padding: 50px 0 20px;
     }
-    &__marketing {
-        font-size: 55.6px;
-        font-weight: 400;
-        color: #ffffff;
-        &:hover {
-            color: #ffffff;
-        }
+    &__desc {
+        text-align: center;
     }
     &__img {
+        max-width: 242px;
+        display: block;
         img {
             width: 100%;
         }
     }
     &__year {
-        font-size: 63.3px;
+        font-size: 42.4px;
         font-weight: 400;
         color: #ffffff;
+        display: block;
+        margin-top: 97px;
+    }
+}
+
+@media screen and (max-width: 3700px) {
+    .market {
+        &__width {
+            width: 64%;
+        }
+    }
+}
+
+@media screen and (max-width: 2400px) {
+    .market {
+        &__width {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .market {
+        &__width {
+            width: 75%;
+        }
     }
 }
 
@@ -632,11 +653,6 @@
         &::before {
             background-size: 100% auto;
             top: 30px;
-        }
-    }
-    .footer {
-        .container {
-            width: 100%;
         }
     }
 }
@@ -652,6 +668,11 @@
             top: 0;
         }
     }
+    .market {
+        &__width {
+            width: 80%;
+        }
+    }
 }
 
 @media screen and (max-width: 1530px) {
@@ -664,11 +685,14 @@
             display: none;
         }
     }
+    .promotion {
+        padding-bottom: 140px;
+    }
     .info {
         &::before {
             background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market_vector.png), url(../img/market_vector2_mob.png);
-            background-position: top 300px left 117px, top 45px left 0, top 182px left 0, right 0 bottom 195px, right 0 bottom 165px;
-            background-size: 215px 448px, 413px 105px, 105px 37px, 359px 109px, 57px 39px;
+            background-position: top 0 right 0, top 45px left 0, top 125px left 0, right 0 bottom 109px, right 0 bottom 93px;
+            background-size: 215px 448px, 413px 96px, 105px 37px, 359px 90px, 57px 39px;
         }
         &__inner {
             padding-top: 280px;
@@ -727,6 +751,13 @@
             height: 65px;
         }
     }
+    .market {
+        padding-bottom: 270px;
+        &__text {
+            font-size: 28px;
+            line-height: 40px;
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -776,13 +807,21 @@
     .info {
         &__inner {
             padding-top: 220px;
-            padding-bottom: 280px;
+            padding-bottom: 220px;
         }
         &__text {}
     }
     .market {
+        padding-bottom: 145px;
         &__title {
             max-width: 550px;
+        }
+        &__desc {
+            padding: 0 0 50px 35px;
+        }
+        &__text {
+            font-size: 21px;
+            line-height: 31px;
         }
     }
     .benefits {
@@ -819,15 +858,8 @@
         }
     }
     .footer {
-        &__marketing {
-            font-size: 40px;
-        }
-        &__img {
-            display: block;
-            width: 190px;
-        }
         &__year {
-            font-size: 40px;
+            margin-top: 40px;
         }
     }
 }
@@ -839,13 +871,13 @@
         }
         &__img {
             display: block;
-            width: 132px;
+            max-width: 132px;
         }
         &__btn {
             &-ru,
             &-eng,
             &-line {
-                font-size: 21px;
+                font-size: 16px;
             }
         }
     }
@@ -930,34 +962,35 @@
         }
         &__img {
             max-width: 85px;
-            top: -35px;
+            top: -30px;
         }
     }
     .info {
+        &::before {
+            background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market_vector.png), url(../img/market_vector2_mob.png);
+            background-position: top 220px left -1117px, top 45px left 0, top 118px left 0, right 0 bottom 107px, right 0 bottom 90px;
+            background-size: 215px 448px, 413px 90px, 105px 37px, 359px 78px, 57px 37px;
+        }
         &__inner {
-            padding-top: 292px;
-            padding-right: 50px;
+            padding-top: 230px;
+            padding-bottom: 230px;
         }
         &__desc {
-            margin-left: auto;
-            max-width: 490px;
+            max-width: 100%;
         }
         &__title {
             padding-bottom: 65px;
-            text-align: start;
             &::before {
                 height: 32px;
-                left: 26%;
+                left: 50%;
             }
         }
         &__text {
-            max-width: 490px;
             line-height: 26px;
-            text-align: start;
             padding-bottom: 75px;
             &::before {
                 height: 32px;
-                left: 26%;
+                left: 50%;
             }
         }
         .market {
@@ -982,27 +1015,16 @@
     .market {
         box-shadow: 0px 102px 72px 10px rgba(0, 0, 0, 0.46);
         padding-top: 45px;
-        padding-bottom: 90px;
         &__img {
             margin-top: 60px;
-        }
-        &__width {
-            bottom: -95px;
-        }
-        &__desc {
-            padding: 0 100px 50px;
-        }
-        &__text {
-            line-height: 28px;
-            max-width: 460px;
         }
     }
     .benefits {
         padding-top: 280px;
         padding-bottom: 45px;
         &::before {
-            height: 400px;
-            top: 150px;
+            height: 460px;
+            top: 160px;
         }
         &__inner {
             display: block;
@@ -1039,6 +1061,17 @@
             padding-bottom: 170px;
         }
     }
+    .footer {
+        &__inner {
+            padding: 25px 0;
+        }
+        &__img {
+            max-width: 127px;
+        }
+        &__year {
+            font-size: 21px;
+        }
+    }
 }
 
 @media screen and (max-width: 870px) {
@@ -1068,7 +1101,7 @@
 @media screen and (max-width: 768px) {
     .header {
         &__img {
-            width: 100px;
+            max-width: 100px;
         }
     }
     .marketing {
@@ -1096,7 +1129,7 @@
             }
         }
         &__desc-mob {
-            margin-top: 55px;
+            margin-top: 65px;
         }
     }
     .connection {
@@ -1128,6 +1161,9 @@
                 display: none;
             }
         }
+        &__item {
+            text-align: center;
+        }
     }
     .map {
         &__inner {
@@ -1155,7 +1191,7 @@
         &::before {
             background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market__vector2__mob2.png), url(../img/market_vector.png), ;
             background-position: top 5px right 9px, top 35px left 0, top 59px left 0, right 0 bottom 37px, right 0 bottom 40px;
-            background-size: 60px 126px, 120px 29px, 50px 12px, 48px 11px, 132px 30px;
+            background-size: 60px 126px, 120px 29px, 38px 12px, 48px 11px, 132px 30px;
         }
         &__inner {
             padding-top: 90px;
@@ -1181,26 +1217,37 @@
     .market {
         padding-bottom: 120px;
         &__img {
-            margin-top: 35px;
+            margin-top: 30px;
+        }
+        &__width {
+            width: 70%;
+            bottom: -25px;
         }
         &__desc {
-            padding: 0 10px 40px;
+            padding: 0 10px 25px;
+        }
+        &__text {
+            font-size: 10px;
+            line-height: 20px;
         }
     }
     .benefits {
+        &::before {
+            height: 400px;
+        }
         &__title {
             max-width: 270px;
         }
     }
     .footer {
-        &__marketing {
-            font-size: 21px;
+        &__inner {
+            padding: 10px 0;
         }
         &__img {
-            width: 127px;
+            max-width: 108px;
         }
         &__year {
-            font-size: 21px;
+            display: none;
         }
     }
 }
@@ -1280,7 +1327,6 @@
             max-height: 150px;
         }
         &__desc-mob {
-            margin-top: 55px;
             max-width: 100%;
         }
         &__text-mob {
@@ -1328,12 +1374,12 @@
             margin-top: 55px;
         }
         &__item {
-            padding: 30px 30px 10px;
+            padding: 35px 30px 10px;
             min-height: 91px;
         }
         &__img {
             max-width: 55px;
-            top: -25px;
+            top: -20px;
         }
         &__text {
             font-size: 8px;
@@ -1349,7 +1395,8 @@
             }
         }
         &__text {
-            line-height: 14px;
+            font-size: 14px;
+            line-height: 18px;
             padding-top: 15px;
             padding-bottom: 30px;
             &::before {
@@ -1361,21 +1408,20 @@
     .market {
         box-shadow: 0px 10px 72px 10px rgba(0, 0, 0, 0.46);
         padding-top: 20px;
-        padding-bottom: 90px;
+        padding-bottom: 60px;
         &__title {
             max-width: 255px;
         }
         &__width {
-            bottom: -25px;
+            bottom: -10px;
+            width: 75%;
         }
         &__desc {
-            padding: 0 10px 10px;
+            padding: 0 0 10px 0;
         }
         &__text {
-            line-height: 14px;
-            max-width: 220px;
-            margin-left: auto;
-            margin-right: unset;
+            font-size: 9px;
+            line-height: 12px;
         }
     }
     .benefits {
@@ -1436,21 +1482,6 @@
             }
         }
     }
-    .footer {
-        &__inner {
-            padding: 0;
-            height: 64px;
-        }
-        &__marketing {
-            font-size: 14px;
-        }
-        &__img {
-            width: 47px;
-        }
-        &__year {
-            font-size: 14px;
-        }
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1460,6 +1491,11 @@
         }
         .work__inner {
             padding: 35px 35px;
+        }
+    }
+    .market {
+        &__width {
+            width: 80%;
         }
     }
 }

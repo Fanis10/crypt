@@ -205,7 +205,7 @@ li {
 }
 .header__btn-ru, .header__btn-eng {
   font-family: 'Bebas Neue';
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   border: none;
@@ -217,7 +217,7 @@ li {
   color: #535050;
 }
 .header__btn-line {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 300;
   color: #000000;
   margin-right: 0px;
@@ -473,6 +473,7 @@ li {
   padding: 90px 93px 30px;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.3s;
+  text-align: center;
   cursor: pointer;
 }
 .promotion__item:hover {
@@ -775,40 +776,49 @@ li {
   position: relative;
   z-index: 5;
 }
-.footer .container {
-  width: 2095px;
-}
 .footer__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px 0;
+  padding: 50px 0 20px;
 }
-.footer__marketing {
-  font-size: 55.6px;
-  font-weight: 400;
-  color: #ffffff;
+.footer__desc {
+  text-align: center;
 }
-.footer__marketing:hover {
-  color: #ffffff;
+.footer__img {
+  max-width: 242px;
+  display: block;
 }
 .footer__img img {
   width: 100%;
 }
 .footer__year {
-  font-size: 63.3px;
+  font-size: 42.4px;
   font-weight: 400;
   color: #ffffff;
+  display: block;
+  margin-top: 97px;
 }
 
+@media screen and (max-width: 3700px) {
+  .market__width {
+    width: 64%;
+  }
+}
+@media screen and (max-width: 2400px) {
+  .market__width {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 2000px) {
+  .market__width {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 2095px) {
   .benefits::before {
     background-size: 100% auto;
     top: 30px;
-  }
-
-  .footer .container {
-    width: 100%;
   }
 }
 @media screen and (max-width: 1650px) {
@@ -818,6 +828,10 @@ li {
 
   .benefits::before {
     top: 0;
+  }
+
+  .market__width {
+    width: 80%;
   }
 }
 @media screen and (max-width: 1530px) {
@@ -830,10 +844,14 @@ li {
     display: none;
   }
 
+  .promotion {
+    padding-bottom: 140px;
+  }
+
   .info::before {
     background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market_vector.png), url(../img/market_vector2_mob.png);
-    background-position: top 300px left 117px, top 45px left 0, top 182px left 0, right 0 bottom 195px, right 0 bottom 165px;
-    background-size: 215px 448px, 413px 105px, 105px 37px, 359px 109px, 57px 39px;
+    background-position: top 0 right 0, top 45px left 0, top 125px left 0, right 0 bottom 109px, right 0 bottom 93px;
+    background-size: 215px 448px, 413px 96px, 105px 37px, 359px 90px, 57px 39px;
   }
   .info__inner {
     padding-top: 280px;
@@ -882,6 +900,14 @@ li {
     width: 300px;
     height: 65px;
   }
+
+  .market {
+    padding-bottom: 270px;
+  }
+  .market__text {
+    font-size: 28px;
+    line-height: 40px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .marketing {
@@ -928,11 +954,21 @@ li {
 
   .info__inner {
     padding-top: 220px;
-    padding-bottom: 280px;
+    padding-bottom: 220px;
   }
 
+  .market {
+    padding-bottom: 145px;
+  }
   .market__title {
     max-width: 550px;
+  }
+  .market__desc {
+    padding: 0 0 50px 35px;
+  }
+  .market__text {
+    font-size: 21px;
+    line-height: 31px;
   }
 
   .benefits__title {
@@ -964,15 +1000,8 @@ li {
     font-size: 21px;
   }
 
-  .footer__marketing {
-    font-size: 40px;
-  }
-  .footer__img {
-    display: block;
-    width: 190px;
-  }
   .footer__year {
-    font-size: 40px;
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -981,10 +1010,10 @@ li {
   }
   .header__img {
     display: block;
-    width: 132px;
+    max-width: 132px;
   }
   .header__btn-ru, .header__btn-eng, .header__btn-line {
-    font-size: 21px;
+    font-size: 16px;
   }
 
   .marketing {
@@ -1070,34 +1099,35 @@ li {
   }
   .promotion__img {
     max-width: 85px;
-    top: -35px;
+    top: -30px;
   }
 
+  .info::before {
+    background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market_vector.png), url(../img/market_vector2_mob.png);
+    background-position: top 220px left -1117px, top 45px left 0, top 118px left 0, right 0 bottom 107px, right 0 bottom 90px;
+    background-size: 215px 448px, 413px 90px, 105px 37px, 359px 78px, 57px 37px;
+  }
   .info__inner {
-    padding-top: 292px;
-    padding-right: 50px;
+    padding-top: 230px;
+    padding-bottom: 230px;
   }
   .info__desc {
-    margin-left: auto;
-    max-width: 490px;
+    max-width: 100%;
   }
   .info__title {
     padding-bottom: 65px;
-    text-align: start;
   }
   .info__title::before {
     height: 32px;
-    left: 26%;
+    left: 50%;
   }
   .info__text {
-    max-width: 490px;
     line-height: 26px;
-    text-align: start;
     padding-bottom: 75px;
   }
   .info__text::before {
     height: 32px;
-    left: 26%;
+    left: 50%;
   }
   .info .market {
     padding-bottom: 140px;
@@ -1121,20 +1151,9 @@ li {
   .market {
     box-shadow: 0px 102px 72px 10px rgba(0, 0, 0, 0.46);
     padding-top: 45px;
-    padding-bottom: 90px;
   }
   .market__img {
     margin-top: 60px;
-  }
-  .market__width {
-    bottom: -95px;
-  }
-  .market__desc {
-    padding: 0 100px 50px;
-  }
-  .market__text {
-    line-height: 28px;
-    max-width: 460px;
   }
 
   .benefits {
@@ -1142,8 +1161,8 @@ li {
     padding-bottom: 45px;
   }
   .benefits::before {
-    height: 400px;
-    top: 150px;
+    height: 460px;
+    top: 160px;
   }
   .benefits__inner {
     display: block;
@@ -1178,6 +1197,16 @@ li {
   .map__inner {
     padding-bottom: 170px;
   }
+
+  .footer__inner {
+    padding: 25px 0;
+  }
+  .footer__img {
+    max-width: 127px;
+  }
+  .footer__year {
+    font-size: 21px;
+  }
 }
 @media screen and (max-width: 870px) {
   .marketing::before {
@@ -1197,7 +1226,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .header__img {
-    width: 100px;
+    max-width: 100px;
   }
 
   .marketing {
@@ -1226,7 +1255,7 @@ li {
     height: calc(100% + 50px);
   }
   .video__desc-mob {
-    margin-top: 55px;
+    margin-top: 65px;
   }
 
   .connection__inner {
@@ -1258,6 +1287,9 @@ li {
   .promotion__items::before {
     display: none;
   }
+  .promotion__item {
+    text-align: center;
+  }
 
   .map__inner {
     padding-bottom: 130px;
@@ -1283,7 +1315,7 @@ li {
   .info::before {
     background-image: url(../img/info_b.png), url(../img/info_vertical.png), url(../img/info_vertical_mob.png), url(../img/market__vector2__mob2.png), url(../img/market_vector.png);
     background-position: top 5px right 9px, top 35px left 0, top 59px left 0, right 0 bottom 37px, right 0 bottom 40px;
-    background-size: 60px 126px, 120px 29px, 50px 12px, 48px 11px, 132px 30px;
+    background-size: 60px 126px, 120px 29px, 38px 12px, 48px 11px, 132px 30px;
   }
   .info__inner {
     padding-top: 90px;
@@ -1308,24 +1340,35 @@ li {
     padding-bottom: 120px;
   }
   .market__img {
-    margin-top: 35px;
+    margin-top: 30px;
+  }
+  .market__width {
+    width: 70%;
+    bottom: -25px;
   }
   .market__desc {
-    padding: 0 10px 40px;
+    padding: 0 10px 25px;
+  }
+  .market__text {
+    font-size: 10px;
+    line-height: 20px;
   }
 
+  .benefits::before {
+    height: 400px;
+  }
   .benefits__title {
     max-width: 270px;
   }
 
-  .footer__marketing {
-    font-size: 21px;
+  .footer__inner {
+    padding: 10px 0;
   }
   .footer__img {
-    width: 127px;
+    max-width: 108px;
   }
   .footer__year {
-    font-size: 21px;
+    display: none;
   }
 }
 @media screen and (max-width: 650px) {
@@ -1393,7 +1436,6 @@ li {
     max-height: 150px;
   }
   .video__desc-mob {
-    margin-top: 55px;
     max-width: 100%;
   }
   .video__text-mob {
@@ -1439,12 +1481,12 @@ li {
     margin-top: 55px;
   }
   .promotion__item {
-    padding: 30px 30px 10px;
+    padding: 35px 30px 10px;
     min-height: 91px;
   }
   .promotion__img {
     max-width: 55px;
-    top: -25px;
+    top: -20px;
   }
   .promotion__text {
     font-size: 8px;
@@ -1459,7 +1501,8 @@ li {
     height: 14px;
   }
   .info__text {
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
     padding-top: 15px;
     padding-bottom: 30px;
   }
@@ -1471,22 +1514,21 @@ li {
   .market {
     box-shadow: 0px 10px 72px 10px rgba(0, 0, 0, 0.46);
     padding-top: 20px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
   .market__title {
     max-width: 255px;
   }
   .market__width {
-    bottom: -25px;
+    bottom: -10px;
+    width: 75%;
   }
   .market__desc {
-    padding: 0 10px 10px;
+    padding: 0 0 10px 0;
   }
   .market__text {
-    line-height: 14px;
-    max-width: 220px;
-    margin-left: auto;
-    margin-right: unset;
+    font-size: 9px;
+    line-height: 12px;
   }
 
   .benefits {
@@ -1544,20 +1586,6 @@ li {
   .map__social-desc {
     font-size: 12px;
   }
-
-  .footer__inner {
-    padding: 0;
-    height: 64px;
-  }
-  .footer__marketing {
-    font-size: 14px;
-  }
-  .footer__img {
-    width: 47px;
-  }
-  .footer__year {
-    font-size: 14px;
-  }
 }
 @media screen and (max-width: 400px) {
   .connection__inner {
@@ -1565,5 +1593,9 @@ li {
   }
   .connection .work__inner {
     padding: 35px 35px;
+  }
+
+  .market__width {
+    width: 80%;
   }
 }
